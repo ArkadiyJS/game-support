@@ -1,0 +1,14 @@
+{
+  "name": "game-support",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "electron . --no-sandbox"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^31.2.1"
+  }
+}
