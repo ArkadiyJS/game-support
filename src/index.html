@@ -1,3 +1,68 @@
 <body>
-  
+  <div class="container">
+    <div class="outer-circle"></div>
+    <div class="outer-circle"></div>
+    <div class="outer-circle"></div>
+    <div class="outer-circle"></div>
+    <div class="center-circle"></div>
+  </div>
+
+  <style>
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Центрирование круга по вертикали */
+    background-color: #f0f0f0; /* Светлый фон для контраста */
+}
+
+.container {
+    position: relative; /* Позволяет позиционировать дочерние элементы относительно него */
+}
+
+.center-circle {
+    width: 70px; /* Ширина центрального круга */
+    height: 70px; /* Высота центрального круга */
+    background-color: black; /* Чёрный цвет центрального круга */
+    border-radius: 50%; /* Делает круги круглыми */
+    position: absolute; /* Позволяет точно позиционировать круг */
+    top: 50%; /* Выровнять по вертикали */
+    left: 50%; /* Выровнять по горизонтали */
+    transform: translate(-50%, -50%); /* Центрирование */
+}
+
+.outer-circle {
+    width: 50px; /* Ширина внешних кругов */
+    height: 50px; /* Высота внешних кругов */
+    background-color: lightgrey; /* Цвет внешних кругов */
+    border-radius: 50%; /* Делает круги круглыми */
+    position: absolute; /* Позволяет точно позиционировать внешние круги */
+}
+
+.outer-circle:nth-child(1) {
+    top: 0; /* Позиция верхнего круга */
+    left: 50%; /* Выровнять по горизонтали */
+    transform: translate(-50%, -50%); /* Центрирование */
+}
+
+.outer-circle:nth-child(2) {
+    right: 0; /* Позиция правого круга */
+    top: 50%; /* Выровнять по вертикали */
+    transform: translate(50%, -50%); /* Центрирование */
+}
+
+.outer-circle:nth-child(3) {
+    bottom: 0; /* Позиция нижнего круга */
+    left: 50%; /* Выровнять по горизонтали */
+    transform: translate(-50%, 50%); /* Центрирование */
+}
+
+.outer-circle:nth-child(4) {
+    left: 0; /* Позиция левого круга */
+    top: 50%; /* Выровнять по вертикали */
+    transform: translate(-50%, -50%); /* Центрирование */
+}
+
+
+  </style>
 </body>
