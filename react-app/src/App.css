@@ -1,0 +1,53 @@
+.app {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 80px;
+  gap: 3px;
+}
+
+.heroOne {
+
+  display: grid;
+
+  grid-template-areas: 'skill skill '
+    'bkb refresh';
+  gap: 1px;
+
+
+}
+
+.ult {
+  grid-area: skill;
+  background-size: 70px 90px;
+
+  width: 70px;
+  height: 90px;
+}
+
+.bkb {
+  background-size: 30px 30px;
+  background-image: url('../public/bkb.jpg');
+  grid-area: bkb;
+  width: 30px;
+  height: 30px;
+
+}
+
+.refresher {
+  background-size: 30px 30px;
+  background-image: url('../public/refresh.jpg');
+  grid-area: refresh;
+  width: 30px;
+
+}
+
+.setting {
+  background-size: 18px 18px;
+  background-image: url('../public/setting.png');
+  position: absolute;
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+
+
+}
